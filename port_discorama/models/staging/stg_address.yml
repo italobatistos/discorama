@@ -1,0 +1,30 @@
+
+version: 2
+
+models:
+  - name: stg_address
+    description: The 'stg_address' table contains data related to customer addresses, including information about street, city, state, and ZIP code. These details are essential for product delivery and communication with customers. Additionally, the table also includes references to specific customers, allowing the association of addresses with the corresponding customers. 
+    columns:
+      - name: address_id
+        description: The unique identifier for the address.
+
+      - name: city_id
+        description: The unique identifier for the city.
+
+      - name: address
+        description: The street address.
+
+      - name: address2
+        description: Additional address details, if applicable.
+
+      - name: district
+        description: The district or neighborhood.
+
+      - name: postal_code
+        description: The postal code or ZIP code.
+
+      - name: phone
+        description: The phone number associated with the address.
+
+      - name: last_update
+        description: The timestamp of the last update for this address.

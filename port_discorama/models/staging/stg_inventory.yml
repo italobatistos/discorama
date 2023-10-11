@@ -1,0 +1,18 @@
+
+version: 2
+
+models:
+  - name: inventory
+    description: The "stg_inventory" table contains information about film inventory in different stores. It includes unique identifiers for inventory items, film associations, store associations, and the timestamps of the last updates for inventory items.
+    columns:
+      - name: inventory_id
+        description: The unique identifier for each inventory item.
+
+      - name: film_id
+        description: The unique identifier for the film in the inventory.
+
+      - name: store_id
+        description: The unique identifier for the store where the inventory is located.
+
+      - name: last_update
+        description: The timestamp of the last update for the inventory item.

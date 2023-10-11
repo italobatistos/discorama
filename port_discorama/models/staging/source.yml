@@ -1,0 +1,143 @@
+
+version: 2
+
+sources:
+  - name: discorama
+    description: This model serves as the primary data source for Discorama's information, providing essential details and insights.
+    schema: port_discorama
+    tables: 
+
+      - name: actor
+        description: The 'actor' table contains data related to the names of actors who participated in movies. 
+        columns:
+          - name: actor_id
+            description: The unique identifier for the actor.
+            tests:
+              - unique
+              - not_null
+
+      - name: address
+        description: The 'address' table contains data related to customer addresses, including information about street, city, state, and ZIP code. These details are essential for product delivery and communication with customers. Additionally, the table also includes references to specific customers, allowing the association of addresses with the corresponding customers. 
+        columns:
+          - name: address_id
+            description: The unique identifier for each address.
+            tests:
+              - unique
+              - not_null
+
+          - name: city_id
+            description: The unique identifier for each city.
+            tests:
+              - not_null
+
+      - name: category
+        description: The "categoria" table contains information about film categories. It serves as a reference for categorizing and classifying films into different genres, providing essential details for organizing and classifying films by category.
+        columns:
+          - name: category_id
+            description: The unique identifier of the category.
+            tests:
+              - unique
+              - not_null
+
+      - name: city
+        description: The "city" table contains information about cities, including their unique identifiers, associated countries, names, and the timestamps of their last updates.
+        columns:
+          - name: city_id
+            description: The unique identifier for each city.
+            tests:
+              - unique
+              - not_null
+
+      - name: country
+        description: The "country" table contains information about countries, including their unique identifiers, names, and the timestamps of their last updates.
+        columns:
+          - name: country_id
+            description: The unique identifier for each country.
+            tests:
+              - unique
+              - not_null
+
+      - name: customer
+        description: The "customer" table contains information about customers, including their unique identifiers, store associations, full names, email addresses, addresses, activation status, creation dates, and last update timestamps.
+        columns:
+          - name: customer_id
+            description: The unique identifier for each customer.
+            tests:
+              - unique
+              - not_null
+
+      - name: film_actor
+        description: The "film_actor" table contains information about the actors and their roles in films. It includes unique identifiers for actors and films, as well as a record of the last update.
+        columns:
+          - name: actor_id
+            description: The unique identifier for each actor.
+            tests:
+              - not_null
+
+          - name: film_id
+            description: The unique identifier for the film in which the actor performs.
+            tests:
+              - not_null
+
+      - name: film_category
+        description: The "film_category" table contains information about the categories assigned to films. It includes unique identifiers for films and categories, as well as the timestamp of the last update for the assignment.
+        columns:
+          - name: film_id
+            description: The unique identifier for each film.
+            tests:
+              - unique
+              - not_null
+      
+      - name: film
+        description: The "film" table contains information about films, including unique identifiers, titles, descriptions, release years, language associations, rental details, ratings, last update timestamps, special features, and full text descriptions.
+        columns:
+          - name: film_id
+            description: The unique identifier for each film.
+            tests:
+              - unique
+              - not_null
+      
+      - name: inventory
+        description: The "inventory" table contains information about film inventory in different stores. It includes unique identifiers for inventory items, film associations, store associations, and the timestamps of the last updates for inventory items.
+        columns:
+          - name: inventory_id
+            description: The unique identifier for each inventory item.
+            tests:
+              - unique
+              - not_null
+      
+      - name: payment
+        description: The "payment" table contains information about payments made by customers for rentals. It includes unique payment identifiers, customer associations, staff associations, rental associations, payment amounts, and payment timestamps.
+        columns:
+          - name: payment_id
+            description: The unique identifier for each payment.
+            tests:
+              - unique
+              - not_null
+      
+      - name: staff
+        description: The "staff" table contains information about staff members, including unique staff identifiers, full names, address associations, email addresses, store associations, activation status, and last update timestamps.
+        columns:
+          - name: staff_id
+            description: The unique identifier for each staff member.
+            tests:
+              - unique
+              - not_null
+
+      - name: rental
+        description: The "rental" table contains information about rental transactions, including unique rental identifiers, rental dates, inventory associations, customer associations, return dates, staff associations, and last update timestamps.
+        columns:
+          - name: rental_id
+            description: The unique identifier for each rental transaction.
+            tests:
+              - unique
+              - not_null
+
+      - name: store
+        description: The "store" table contains information about stores, including unique store identifiers, manager staff associations, address associations, and the timestamp of the last update for each store.
+        columns:
+          - name: store_id
+            description: The unique identifier for each store.
+            tests:
+              - unique
+              - not_null

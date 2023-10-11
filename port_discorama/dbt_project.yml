@@ -34,5 +34,18 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   port_discorama:
     # Config indicated by + and applies to all files under models/example/
-    example:
-      +materialized: view
+    marts:
+      +materialized: table
+      +schema: marts_discorama
+
+    intermediate:
+      +materialized: table
+
+    staging:
+      +materialized: table
+      +schema: staging_discorama
+
+seeds:
+  port_discorama:
+    source:
+      +schema: seed_port_discorama

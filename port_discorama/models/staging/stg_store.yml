@@ -1,0 +1,18 @@
+
+version: 2
+
+models:
+  - name: store
+    description: The "stg_store" table contains information about stores, including unique store identifiers, manager staff associations, address associations, and the timestamp of the last update for each store.
+    columns:
+      - name: store_id
+        description: The unique identifier for each store.
+
+      - name: manager_staff_id
+        description: The unique identifier for the staff member who manages the store.
+
+      - name: address_id
+        description: The unique identifier for the address associated with the store.
+
+      - name: last_update
+        description: The timestamp of the last update for the store record.
