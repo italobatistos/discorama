@@ -1,0 +1,33 @@
+
+version: 2
+
+models:
+  - name: customer
+    description: The "stg_customer" table contains information about customers, including their unique identifiers, store associations, full names, email addresses, addresses, activation status, creation dates, and last update timestamps.
+    columns:
+      - name: customer_id
+        description: The unique identifier for each customer.
+
+      - name: store_id
+        description: The unique identifier for the store to which the customer is associated.
+
+      - name: customer_name
+        description: The full name of the customer, which is a concatenation of the first name and last name.
+
+      - name: email
+        description: The email address of the customer.
+
+      - name: address_id
+        description: The unique identifier for the customer's address.
+
+      - name: activebool
+        description: A text representation of the customer's activation status (possibly "True" or "False").
+
+      - name: create_date
+        description: The timestamp of the creation of the customer record.
+
+      - name: last_update
+        description: The timestamp of the last update to the customer record.
+
+      - name: active
+        description: A numeric representation of the customer's activation status (possibly 1 for active, 0 for inactive).

@@ -1,0 +1,24 @@
+
+version: 2
+
+models:
+  - name: payment
+    description: The "stg_payment" table contains information about payments made by customers for rentals. It includes unique payment identifiers, customer associations, staff associations, rental associations, payment amounts, and payment timestamps.
+    columns:
+      - name: payment_id
+        description: The unique identifier for each payment.
+
+      - name: customer_id
+        description: The unique identifier for the customer who made the payment.
+
+      - name: staff_id
+        description: The unique identifier for the staff member who processed the payment.
+
+      - name: rental_id
+        description: The timestamp of the rental associated with the payment.
+
+      - name: amount
+        description: The payment amount, possibly in numeric format.
+
+      - name: payment_date
+        description: The timestamp of the payment date.

@@ -1,0 +1,27 @@
+
+version: 2
+
+models:
+  - name: staff
+    description: The "stg_staff" table contains information about staff members, including unique staff identifiers, full names, address associations, email addresses, store associations, activation status, and last update timestamps.
+    columns:
+      - name: staff_id
+        description: The unique identifier for each staff member.
+
+      - name: staff_name
+        description: The full name of the staff member, which is a concatenation of the first name and last name.
+
+      - name: address_id
+        description: The unique identifier for the address associated with the staff member.
+
+      - name: email
+        description: The email address of the staff member.
+
+      - name: store_id
+        description: The unique identifier for the store to which the staff member is associated.
+
+      - name: active
+        description: A text representation of the staff member's activation status (possibly "True" or "False").
+
+      - name: last_update
+        description: The timestamp of the last update for the staff member's record.

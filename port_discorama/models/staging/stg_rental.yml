@@ -1,0 +1,27 @@
+
+version: 2
+
+models:
+  - name: rental
+    description: The "stg_rental" table contains information about rental transactions, including unique rental identifiers, rental dates, inventory associations, customer associations, return dates, staff associations, and last update timestamps.
+    columns:
+      - name: rental_id
+        description: The unique identifier for each rental transaction.
+
+      - name: rental_date
+        description: The timestamp of the rental date.
+
+      - name: inventory_id
+        description: The unique identifier for the inventory item rented.
+
+      - name: customer_id
+        description: The unique identifier for the customer who rented the item.
+
+      - name: return_date
+        description: The timestamp of the return date.
+
+      - name: staff_id
+        description: The unique identifier for the staff member involved in the rental transaction.
+
+      - name: last_update
+        description: The timestamp of the last update for the rental transaction record.

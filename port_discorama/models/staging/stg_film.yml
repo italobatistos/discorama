@@ -1,0 +1,45 @@
+
+version: 2
+
+models:
+  - name: film
+    description: The "stg_film" table contains information about films, including unique identifiers, titles, descriptions, release years, language associations, rental details, ratings, last update timestamps, special features, and full text descriptions.
+    columns:
+      - name: film_id
+        description: The unique identifier for each film.
+
+      - name: title
+        description: The title of the film.
+
+      - name: description
+        description: A description of the film.
+
+      - name: release_year
+        description: The year in which the film was released.
+
+      - name: language_id
+        description: The unique identifier for the language of the film.
+
+      - name: rental_duration
+        description: The duration for which the film can be rented.
+
+      - name: rental_rate
+        description: The rental rate of the film.
+
+      - name: length
+        description: The length of the film.
+
+      - name: replacement_cost
+        description: The cost of replacing the film.
+
+      - name: rating
+        description: The rating or classification of the film.
+
+      - name: last_update
+        description: The timestamp of the last update for the film.
+
+      - name: special_features
+        description: Special features associated with the film.
+
+      - name: full_text
+        description: The full text description of the film.

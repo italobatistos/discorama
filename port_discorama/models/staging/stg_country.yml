@@ -1,0 +1,15 @@
+
+version: 2
+
+models:
+  - name: country
+    description: The "stg_country" table contains information about countries, including their unique identifiers, names, and the timestamps of their last updates.
+    columns:
+      - name: country_id
+        description: The unique identifier for each country.
+
+      - name: country_name
+        description: The name of the country.
+
+      - name: last_update
+        description: The timestamp of the last update for the country.

@@ -1,0 +1,15 @@
+
+version: 2
+
+models:
+  - name: film_category
+    description: The "stg_film_category" table contains information about the categories assigned to films. It includes unique identifiers for films and categories, as well as the timestamp of the last update for the assignment.
+    columns:
+      - name: film_id
+        description: The unique identifier for each film.
+
+      - name: category_id
+        description: The unique identifier for the film category.
+
+      - name: last_update
+        description: The timestamp of the last update for the assignment of a film to a category.

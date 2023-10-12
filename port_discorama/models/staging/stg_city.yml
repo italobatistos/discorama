@@ -1,0 +1,18 @@
+
+version: 2
+
+models:
+  - name: city
+    description: The "stg_city" table contains information about cities, including their unique identifiers, associated countries, names, and the timestamps of their last updates.
+    columns:
+      - name: city_id
+        description: The unique identifier for each city.
+
+      - name: country_id
+        description: The unique identifier for the country to which the city is associated.
+
+      - name: city_name
+        description: The name of the city.
+
+      - name: last_update
+        description: The timestamp of the last update for the city.

@@ -1,0 +1,15 @@
+
+version: 2
+
+models:
+  - name: film_actor
+    description: The "stg_film_actor" table contains information about the actors and their roles in films. It includes unique identifiers for actors and films, as well as a record of the last update.
+    columns:
+      - name: actor_id
+        description: The unique identifier for each actor.
+
+      - name: film_id
+        description: The unique identifier for the film in which the actor performs.
+
+      - name: last_update
+        description: The record of the last update, possibly in string format.
