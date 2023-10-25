@@ -1,0 +1,31 @@
+
+version: 2
+
+models:
+  - name: int_store
+    description: This intermediate table contains information about stores and their associated staff members, including details about addresses and staff information.
+
+    columns:
+      - name: staff_id
+        description: The identifier of the staff member associated with the store.
+
+      - name: store_id
+        description: The ID of the store.
+
+      - name: manager_staff_id
+        description: The ID of the manager staff associated with the store.
+
+      - name: manager_staff_address_id
+        description: The identifier of the address associated with the manager staff.
+
+      - name: staff_address_id
+        description: The identifier of the address associated with the staff member.
+
+      - name: staff_name
+        description: The name of the staff member.
+
+      - name: email
+        description: The email address of the staff member.
+
+      - name: active
+        description: A value indicating whether the staff member is active.

@@ -1,0 +1,49 @@
+
+version: 2
+
+models:
+  - name: dim_payment
+    description: This dimension provides information about payments related to rentals, including details about rentals, customers, stores, and staff.
+
+    columns:
+      - name: payment_id
+        description: The unique identifier for the payment.
+
+      - name: inventory_id
+        description: The identifier of the inventory item associated with the payment.
+
+      - name: rental_id
+        description: The rental identifier associated with the payment.
+
+      - name: customer_id
+        description: The customer identifier associated with the payment.
+
+      - name: store_id
+        description: The ID of the store associated with the payment.
+
+      - name: manager_staff_id
+        description: The ID of the store manager associated with the payment.
+
+      - name: staff_id
+        description: The ID of the staff member associated with the payment.
+
+      - name: staff_name
+        description: The name of the staff member associated with the payment.
+
+      - name: email
+        description: The email address of the store associated with the payment.
+
+      - name: payment_date
+        description: The date of the payment.
+
+      - name: rental_date
+        description: The rental date.
+
+      - name: return_date
+        description: The return date.
+
+      - name: amount
+        description: The payment amount.
+
+      - name: staff_active
+        description: A value indicating whether the staff member is active.

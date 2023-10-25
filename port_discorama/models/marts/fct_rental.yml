@@ -1,0 +1,136 @@
+
+version: 2
+
+models:
+  - name: fct_rental
+    description: This fact table contains data related to rentals, including details about payments, customers, inventory, and films.
+
+    columns:
+      - name: sk_payment
+        description: The surrogate key for payment.
+
+      - name: store_id
+        description: The ID of the store associated with the rental.
+
+      - name: sk_store
+        description: The surrogate key for the store associated with the rental.
+
+      - name: manager_staff_id
+        description: The ID of the manager staff associated with the rental.
+
+      - name: staff_id
+        description: The ID of the staff member associated with the rental.
+
+      - name: inventory_id
+        description: The identifier of the inventory item associated with the rental.
+
+      - name: film_id
+        description: The identifier of the film associated with the rental.
+
+      - name: rental_id
+        description: The identifier of the rental.
+
+      - name: payment_id
+        description: The identifier of the payment associated with the rental.
+
+      - name: customer_id
+        description: The identifier of the customer associated with the rental.
+
+      - name: address_id
+        description: The identifier of the customer's address.
+
+      - name: staff_name
+        description: The name of the staff member.
+
+      - name: staff_email
+        description: The email address of the staff member.
+
+      - name: staff_active
+        description: A value indicating whether the staff member is active.
+
+      - name: create_date
+        description: The creation date of the customer.
+
+      - name: customer_name
+        description: The name of the customer.
+
+      - name: customer_email
+        description: The email address of the customer.
+
+      - name: customer_phone
+        description: The phone number of the customer.
+
+      - name: country_name
+        description: The name of the country where the customer resides.
+
+      - name: city_name
+        description: The name of the city where the customer resides.
+
+      - name: district
+        description: The district or neighborhood where the customer resides.
+
+      - name: postal_code
+        description: The postal code of the customer's residential area.
+
+      - name: customer_address
+        description: The customer's mailing address.
+
+      - name: customer_address_additional
+        description: Additional information about the customer's address.
+
+      - name: customer_active
+        description: A value indicating whether the customer is active.
+
+      - name: film_title
+        description: The title of the film.
+
+      - name: film_category
+        description: The category to which the film belongs.
+
+      - name: film_release_year
+        description: The release year of the film.
+
+      - name: film_description
+        description: A brief description of the film.
+
+      - name: film_actor_list
+        description: A comma-separated list of actors who appeared in the film.
+
+      - name: special_features
+        description: Special features or attributes of the film.
+
+      - name: rating
+        description: The film's rating.
+
+      - name: language_id
+        description: The identifier of the language in which the film is available.
+
+      - name: length
+        description: The length of the film in minutes.
+
+      - name: replacement_cost
+        description: The cost to replace the film in case of damage or loss.
+
+      - name: rental_duration
+        description: The duration for which the film can be rented.
+
+      - name: rental_rate
+        description: The rental rate for the film.
+
+      - name: delay_rental_days
+        description: The number of days a rental was delayed.
+
+      - name: amount
+        description: The payment amount for the rental.
+
+      - name: amount_delay_tax
+        description: The tax applied to the payment amount for the rental.
+        
+      - name: payment_date
+        description: The date of the payment for the rental.
+
+      - name: rental_date
+        description: The date when the rental started.
+
+      - name: return_date
+        description: The date when the rental was returned.
