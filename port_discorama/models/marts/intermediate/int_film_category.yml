@@ -1,0 +1,16 @@
+
+version: 2
+
+models:
+  - name: int_film_category
+    description: This intermediate table contains information about film categories, including the association between films and categories.
+
+    columns:
+      - name: film_id
+        description: The identifier of the film associated with the category.
+
+      - name: category_id
+        description: The identifier of the category associated with the film.
+
+      - name: category_name
+        description: The name of the category to which the film belongs.

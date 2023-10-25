@@ -1,0 +1,52 @@
+
+version: 2
+
+models:
+  - name: dim_inventory
+    description: This dimension provides information about inventory items, including details about films, actors, and categories.
+
+    columns:
+      - name: inventory_id
+        description: The unique identifier for the inventory item.
+
+      - name: store_id
+        description: The ID of the store where the inventory item is located.
+
+      - name: film_id
+        description: The identifier of the film associated with the inventory item.
+
+      - name: title
+        description: The title of the film.
+
+      - name: category_name
+        description: The category to which the film belongs.
+
+      - name: release_year
+        description: The year of release of the film.
+
+      - name: description
+        description: A brief description of the film.
+
+      - name: actor_list
+        description: A comma-separated list of actors who appeared in the film.
+
+      - name: language_id
+        description: The identifier of the language in which the film is available.
+
+      - name: rental_duration
+        description: The duration for which the film can be rented.
+
+      - name: rental_rate
+        description: The rental rate for the film.
+
+      - name: length
+        description: The length of the film in minutes.
+
+      - name: replacement_cost
+        description: The cost to replace the film in case of damage or loss.
+
+      - name: rating
+        description: The film's rating.
+
+      - name: special_features
+        description: Special features or attributes of the film.

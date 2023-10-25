@@ -1,0 +1,51 @@
+
+version: 2
+
+models:
+  - name: dim_customer
+    description: This dimension contains information about your company's customers, including personal and contact details.
+    columns:
+      - name: store_id
+        description: The ID of the store to which the customer is associated.
+
+      - name: customer_id
+        description: The unique identifier for the customer.
+
+      - name: address_id
+        description: The unique identifier for the customer's address.
+
+      - name: create_date
+        description: The date of the customer's record creation.
+
+      - name: customer_name
+        description: The name of the customer.
+
+      - name: email
+        description: The customer's email address.
+
+      - name: phone
+        description: The customer's phone number.
+
+      - name: country_name
+        description: The name of the country where the customer resides.
+
+      - name: city_name
+        description: The name of the city where the customer resides.
+
+      - name: district
+        description: The district or neighborhood where the customer resides.
+
+      - name: postal_code
+        description: The postal code of the customer's residential area.
+
+      - name: address
+        description: The customer's mailing address.
+
+      - name: address_additional
+        description: Additional information about the customer's address.
+
+      - name: activebool
+        description: A boolean value indicating whether the customer is active.
+        
+      - name: active
+        description: A value representing the customer's activation status.
