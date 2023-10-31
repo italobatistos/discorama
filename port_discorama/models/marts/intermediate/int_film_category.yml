@@ -8,9 +8,16 @@ models:
     columns:
       - name: film_id
         description: The identifier of the film associated with the category.
+        tests:
+              - unique
+              - not_null
 
       - name: category_id
         description: The identifier of the category associated with the film.
+        tests:
+              - not_null
 
       - name: category_name
         description: The name of the category to which the film belongs.
+        tests:
+              - not_null

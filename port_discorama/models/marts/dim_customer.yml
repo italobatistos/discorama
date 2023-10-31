@@ -7,12 +7,19 @@ models:
     columns:
       - name: store_id
         description: The ID of the store to which the customer is associated.
+        tests:
+              - not_null
 
       - name: customer_id
         description: The unique identifier for the customer.
+        tests:
+              - unique
+              - not_null
 
       - name: address_id
         description: The unique identifier for the customer's address.
+        tests:
+              - not_null
 
       - name: create_date
         description: The date of the customer's record creation.
