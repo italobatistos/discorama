@@ -8,24 +8,39 @@ models:
     columns:
       - name: payment_id
         description: The unique identifier for the payment.
+        tests:
+              - unique
+              - not_null
 
       - name: inventory_id
         description: The identifier of the inventory item associated with the payment.
+        tests:
+              - not_null
 
       - name: rental_id
         description: The rental identifier associated with the payment.
+        tests:
+              - not_null
 
       - name: customer_id
         description: The customer identifier associated with the payment.
+        tests:
+              - not_null
 
       - name: store_id
         description: The ID of the store associated with the payment.
+        tests:
+              - not_null
 
       - name: manager_staff_id
         description: The ID of the store manager associated with the payment.
+        tests:
+              - not_null
 
       - name: staff_id
         description: The ID of the staff member associated with the payment.
+        tests:
+              - not_null
 
       - name: staff_name
         description: The name of the staff member associated with the payment.

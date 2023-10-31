@@ -8,12 +8,20 @@ models:
     columns:
       - name: inventory_id
         description: The unique identifier for the inventory item.
+        tests:
+              - unique
+              - not_null
 
       - name: store_id
         description: The ID of the store where the inventory item is located.
+        tests:
+              - not_null
 
       - name: film_id
         description: The identifier of the film associated with the inventory item.
+        tests:
+              - unique
+              - not_null
 
       - name: title
         description: The title of the film.
